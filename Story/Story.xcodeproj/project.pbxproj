@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F500F08D2024E2150005D39A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F08C2024E2150005D39A /* MainViewController.swift */; };
+		F500F08F2024ED1F0005D39A /* CharacterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F08E2024ED1F0005D39A /* CharacterStore.swift */; };
+		F500F0912024F3CB0005D39A /* SadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F0902024F3CB0005D39A /* SadViewController.swift */; };
+		F500F0942024F4970005D39A /* MadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F0932024F4970005D39A /* MadViewController.swift */; };
 		F5BB9A1C201FA8C2004FE42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB9A1B201FA8C2004FE42E /* AppDelegate.swift */; };
-		F5BB9A1E201FA8C2004FE42E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB9A1D201FA8C2004FE42E /* ViewController.swift */; };
+		F5BB9A1E201FA8C2004FE42E /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB9A1D201FA8C2004FE42E /* TrainViewController.swift */; };
 		F5BB9A21201FA8C2004FE42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB9A1F201FA8C2004FE42E /* Main.storyboard */; };
 		F5BB9A24201FA8C2004FE42E /* Story.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5BB9A22201FA8C2004FE42E /* Story.xcdatamodeld */; };
 		F5BB9A26201FA8C2004FE42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BB9A25201FA8C2004FE42E /* Assets.xcassets */; };
 		F5BB9A29201FA8C2004FE42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB9A27201FA8C2004FE42E /* LaunchScreen.storyboard */; };
+		F5DA6AC12024D72400438BD8 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DA6AC02024D72400438BD8 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F500F08C2024E2150005D39A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F500F08E2024ED1F0005D39A /* CharacterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStore.swift; sourceTree = "<group>"; };
+		F500F0902024F3CB0005D39A /* SadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
+		F500F0932024F4970005D39A /* MadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadViewController.swift; sourceTree = "<group>"; };
 		F5BB9A18201FA8C2004FE42E /* Story.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Story.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BB9A1B201FA8C2004FE42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5BB9A1D201FA8C2004FE42E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5BB9A1D201FA8C2004FE42E /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 		F5BB9A20201FA8C2004FE42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5BB9A23201FA8C2004FE42E /* Story.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Story.xcdatamodel; sourceTree = "<group>"; };
 		F5BB9A25201FA8C2004FE42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5BB9A28201FA8C2004FE42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5BB9A2A201FA8C2004FE42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DA6AC02024D72400438BD8 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				F5BB9A1A201FA8C2004FE42E /* Story */,
+				F5BB9A2A201FA8C2004FE42E /* Info.plist */,
+				F5BB9A22201FA8C2004FE42E /* Story.xcdatamodeld */,
 				F5BB9A19201FA8C2004FE42E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +68,50 @@
 		F5BB9A1A201FA8C2004FE42E /* Story */ = {
 			isa = PBXGroup;
 			children = (
-				F5BB9A1B201FA8C2004FE42E /* AppDelegate.swift */,
-				F5BB9A1D201FA8C2004FE42E /* ViewController.swift */,
-				F5BB9A1F201FA8C2004FE42E /* Main.storyboard */,
+				F5DA6ABF2024D6D200438BD8 /* Model */,
+				F5DA6ABE2024D6C200438BD8 /* Controller */,
+				F5DA6ABD2024D6B800438BD8 /* View */,
+				F5DA6AC22024DEE500438BD8 /* Other */,
 				F5BB9A25201FA8C2004FE42E /* Assets.xcassets */,
-				F5BB9A27201FA8C2004FE42E /* LaunchScreen.storyboard */,
-				F5BB9A2A201FA8C2004FE42E /* Info.plist */,
-				F5BB9A22201FA8C2004FE42E /* Story.xcdatamodeld */,
 			);
 			path = Story;
+			sourceTree = "<group>";
+		};
+		F5DA6ABD2024D6B800438BD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB9A1F201FA8C2004FE42E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5DA6ABE2024D6C200438BD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB9A1D201FA8C2004FE42E /* TrainViewController.swift */,
+				F500F0902024F3CB0005D39A /* SadViewController.swift */,
+				F500F08C2024E2150005D39A /* MainViewController.swift */,
+				F500F0932024F4970005D39A /* MadViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5DA6ABF2024D6D200438BD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5DA6AC02024D72400438BD8 /* Character.swift */,
+				F500F08E2024ED1F0005D39A /* CharacterStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5DA6AC22024DEE500438BD8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB9A1B201FA8C2004FE42E /* AppDelegate.swift */,
+				F5BB9A27201FA8C2004FE42E /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5BB9A1E201FA8C2004FE42E /* ViewController.swift in Sources */,
+				F5BB9A1E201FA8C2004FE42E /* TrainViewController.swift in Sources */,
+				F500F08F2024ED1F0005D39A /* CharacterStore.swift in Sources */,
+				F5DA6AC12024D72400438BD8 /* Character.swift in Sources */,
+				F500F0942024F4970005D39A /* MadViewController.swift in Sources */,
 				F5BB9A1C201FA8C2004FE42E /* AppDelegate.swift in Sources */,
 				F5BB9A24201FA8C2004FE42E /* Story.xcdatamodeld in Sources */,
+				F500F0912024F3CB0005D39A /* SadViewController.swift in Sources */,
+				F500F08D2024E2150005D39A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +332,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7658FGUAHR;
-				INFOPLIST_FILE = Story/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rodrigossal.Story;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +348,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7658FGUAHR;
-				INFOPLIST_FILE = Story/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rodrigossal.Story;
 				PRODUCT_NAME = "$(TARGET_NAME)";
