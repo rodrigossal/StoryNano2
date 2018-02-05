@@ -10,8 +10,17 @@ import UIKit
 
 class MadViewController: TrainViewController {
     
+    @IBOutlet weak var RedWall: NSLayoutConstraint!
+    @IBOutlet weak var sacoMad: NSLayoutConstraint!
+    
     override var character: Character {
         return CharacterStore.main.mad
+    }
+    override var constrainPersonagem: NSLayoutConstraint{
+        return RedWall
+    }
+    override var constrainSaco: NSLayoutConstraint{
+        return sacoMad
     }
 }
 

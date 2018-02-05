@@ -10,7 +10,17 @@ import UIKit
 
 class SadViewController: TrainViewController {
     
+    @IBOutlet weak var BlueWall: NSLayoutConstraint!
+    @IBOutlet weak var sacoSad: NSLayoutConstraint!
+    
     override var character: Character {
         return CharacterStore.main.sad
     }
+    override var constrainPersonagem: NSLayoutConstraint{
+        return BlueWall
+    }
+    override var constrainSaco: NSLayoutConstraint{
+        return sacoSad
+    }
+    
 }

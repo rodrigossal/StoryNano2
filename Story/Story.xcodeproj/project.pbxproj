@@ -11,6 +11,11 @@
 		F500F08F2024ED1F0005D39A /* CharacterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F08E2024ED1F0005D39A /* CharacterStore.swift */; };
 		F500F0912024F3CB0005D39A /* SadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F0902024F3CB0005D39A /* SadViewController.swift */; };
 		F500F0942024F4970005D39A /* MadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500F0932024F4970005D39A /* MadViewController.swift */; };
+		F5ACC66B20289B91008EA2C5 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACC66A20289B91008EA2C5 /* StoryViewController.swift */; };
+		F5ACC66D20289C15008EA2C5 /* InitialText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACC66C20289C15008EA2C5 /* InitialText.swift */; };
+		F5ACC66F2028A11C008EA2C5 /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACC66E2028A11C008EA2C5 /* BattleViewController.swift */; };
+		F5ACC6722028A152008EA2C5 /* SadBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACC6712028A152008EA2C5 /* SadBattleViewController.swift */; };
+		F5ACC6742028A160008EA2C5 /* MadBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACC6732028A160008EA2C5 /* MadBattleViewController.swift */; };
 		F5BB9A1C201FA8C2004FE42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB9A1B201FA8C2004FE42E /* AppDelegate.swift */; };
 		F5BB9A1E201FA8C2004FE42E /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB9A1D201FA8C2004FE42E /* TrainViewController.swift */; };
 		F5BB9A21201FA8C2004FE42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB9A1F201FA8C2004FE42E /* Main.storyboard */; };
@@ -25,6 +30,11 @@
 		F500F08E2024ED1F0005D39A /* CharacterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStore.swift; sourceTree = "<group>"; };
 		F500F0902024F3CB0005D39A /* SadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
 		F500F0932024F4970005D39A /* MadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadViewController.swift; sourceTree = "<group>"; };
+		F5ACC66A20289B91008EA2C5 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		F5ACC66C20289C15008EA2C5 /* InitialText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialText.swift; sourceTree = "<group>"; };
+		F5ACC66E2028A11C008EA2C5 /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		F5ACC6712028A152008EA2C5 /* SadBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadBattleViewController.swift; sourceTree = "<group>"; };
+		F5ACC6732028A160008EA2C5 /* MadBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadBattleViewController.swift; sourceTree = "<group>"; };
 		F5BB9A18201FA8C2004FE42E /* Story.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Story.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BB9A1B201FA8C2004FE42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5BB9A1D201FA8C2004FE42E /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F500F0952024F4D40005D39A /* TrainChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F500F0902024F3CB0005D39A /* SadViewController.swift */,
+				F500F0932024F4970005D39A /* MadViewController.swift */,
+			);
+			path = TrainChildViewController;
+			sourceTree = "<group>";
+		};
+		F5ACC6702028A129008EA2C5 /* BattleChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5ACC6712028A152008EA2C5 /* SadBattleViewController.swift */,
+				F5ACC6732028A160008EA2C5 /* MadBattleViewController.swift */,
+			);
+			path = BattleChildViewController;
+			sourceTree = "<group>";
+		};
 		F5BB9A0F201FA8C2004FE42E = {
 			isa = PBXGroup;
 			children = (
@@ -88,10 +116,12 @@
 		F5DA6ABE2024D6C200438BD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F5ACC66E2028A11C008EA2C5 /* BattleViewController.swift */,
+				F5ACC6702028A129008EA2C5 /* BattleChildViewController */,
 				F5BB9A1D201FA8C2004FE42E /* TrainViewController.swift */,
-				F500F0902024F3CB0005D39A /* SadViewController.swift */,
+				F500F0952024F4D40005D39A /* TrainChildViewController */,
 				F500F08C2024E2150005D39A /* MainViewController.swift */,
-				F500F0932024F4970005D39A /* MadViewController.swift */,
+				F5ACC66A20289B91008EA2C5 /* StoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +131,7 @@
 			children = (
 				F5DA6AC02024D72400438BD8 /* Character.swift */,
 				F500F08E2024ED1F0005D39A /* CharacterStore.swift */,
+				F5ACC66C20289C15008EA2C5 /* InitialText.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,9 +220,14 @@
 				F5BB9A1E201FA8C2004FE42E /* TrainViewController.swift in Sources */,
 				F500F08F2024ED1F0005D39A /* CharacterStore.swift in Sources */,
 				F5DA6AC12024D72400438BD8 /* Character.swift in Sources */,
+				F5ACC66F2028A11C008EA2C5 /* BattleViewController.swift in Sources */,
+				F5ACC66B20289B91008EA2C5 /* StoryViewController.swift in Sources */,
 				F500F0942024F4970005D39A /* MadViewController.swift in Sources */,
+				F5ACC66D20289C15008EA2C5 /* InitialText.swift in Sources */,
+				F5ACC6722028A152008EA2C5 /* SadBattleViewController.swift in Sources */,
 				F5BB9A1C201FA8C2004FE42E /* AppDelegate.swift in Sources */,
 				F5BB9A24201FA8C2004FE42E /* Story.xcdatamodeld in Sources */,
+				F5ACC6742028A160008EA2C5 /* MadBattleViewController.swift in Sources */,
 				F500F0912024F3CB0005D39A /* SadViewController.swift in Sources */,
 				F500F08D2024E2150005D39A /* MainViewController.swift in Sources */,
 			);
